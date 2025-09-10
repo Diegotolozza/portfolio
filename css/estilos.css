@@ -36,13 +36,13 @@ body {
 ========================== */
 .hero {
   position: relative;
-  height: 100vh; /* ocupa toda la pantalla */
+  height: 50vh; /* ocupa toda la pantalla */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  background: url('../img/camaras.png') center/cover no-repeat; /* tu imagen de fondo */
+  background: url('../img/camaras.png') center/contain no-repeat; /* tu imagen de fondo */
 }
 
 .hero::before {
