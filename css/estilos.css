@@ -36,23 +36,22 @@ body {
 ========================== */
 .hero {
   position: relative;
-  height: 50vh; /* ocupa toda la pantalla */
+  height: 100vh; /* ocupa toda la pantalla en desktop */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  background: url('../img/camaras.png') center/contain no-repeat; /* tu imagen de fondo */
+  background: url('../img/camaras.png') center/cover no-repeat;
 }
 
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* overlay negro semitransparente */
+  background-color: rgba(0, 0, 0, 0.7); /* overlay semitransparente */
   z-index: 1;
 }
 
@@ -91,7 +90,7 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.35); /* solo un toque oscuro */
+  background-color: rgba(0,0,0,0.35); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,19 +133,19 @@ img.img-fluid {
 }
 
 /* ==========================
-   Hero responsivo para móviles
+   Hero responsivo (móviles)
 ========================== */
 @media (max-width: 768px) {
   .hero {
-    height: 50vh; /* reduce la altura en móviles */
-    background-size: cover; /* cubre el contenedor */
+    height: 30vh; /* mucho más finito en celulares */
+    background-size: cover; /* mantiene proporción y cubre el ancho */
   }
 
   .hero h1 {
-    font-size: 2rem; /* texto más pequeño */
+    font-size: 1.8rem;
   }
 
   .hero p {
-    font-size: 1rem; /* texto más pequeño */
+    font-size: 0.9rem;
   }
 }
